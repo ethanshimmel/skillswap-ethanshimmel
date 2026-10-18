@@ -1,0 +1,1 @@
+console.log("Skill Swap homepage loaded.");
