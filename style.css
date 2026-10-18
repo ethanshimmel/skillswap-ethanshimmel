@@ -2,32 +2,122 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f1f1f1;
     color: #243047;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
 }
 
 header {
     background-color: #183153;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-main {
-    padding: 40px 20px;
-    min-height: 70vh;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-section {
-    max-width: 1000px;
-    margin: 0 auto;
+header h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 75px 0;
+    text-align: center;
+    background: #e2edff;
+}
+
+.hero h2 {
+    font-size: clamp (2rem, 5vw, 3rem);
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 12px auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #2459a9;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus-visible {
+    background: #183153;
+}
+
+.skills-section,
+.offer-section,
+.about-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 footer {
+    margin-top: 30px;
+    padding: 20px;
     background-color: #183153;
     color: white;
-    padding: 15px;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
 }
