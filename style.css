@@ -121,3 +121,44 @@ footer p {
         padding: 50px 0;
     }
 }
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    padding: 22px;
+    background: white;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(24, 49, 83, 0.08);
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #183153;
+}
+
+.details-button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2459a9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.details-button:hover,
+.details-button:focus-visible {
+    background: #183153;
+}
+
+.extra-details {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #dce3ed
+}
